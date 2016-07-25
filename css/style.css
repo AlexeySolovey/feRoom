@@ -9,6 +9,9 @@
 /*****************************
 			main
 *****************************/
+body {
+  overflow-x: hidden;
+}
 a:hover {
   cursor: pointer;
 }
@@ -138,7 +141,7 @@ header .registration-icon {
   width: 50%;
 }
 header .registration-icon img {
-  width: 50px;
+  width: 40px;
   position: relative;
   bottom: 16px;
 }
@@ -154,6 +157,7 @@ header .registration-icon a span {
   display: inline-block;
   width: 112px;
   font-size: 18px;
+  margin-bottom: 20px;
 }
 header .registration-icon a:hover {
   color: white;
@@ -163,7 +167,7 @@ header .basket-icon {
   width: 50%;
 }
 header .basket-icon img {
-  width: 50px;
+  width: 40px;
   position: relative;
   bottom: 16px;
 }
@@ -177,6 +181,7 @@ header .basket-icon a span {
   display: inline-block;
   width: 112px;
   font-size: 18px;
+  margin-bottom: 20px;
 }
 header .basket-icon a:hover {
   color: white;
@@ -204,11 +209,12 @@ header .form .form-inputs .labels label {
   font-weight: normal;
 }
 header .form .form-inputs .labels span {
-  font-size: 25px;
+  font-size: 20px;
 }
 header .form .form-inputs .inputs {
-  float: right;
-  width: 59%;
+  width: 65%;
+  display: table;
+  margin: 0 auto;
 }
 header .form .form-inputs .inputs input {
   font-size: 20px;
@@ -451,10 +457,10 @@ section.about {
 }
 section.about h1 {
   margin-top: 90px;
-  font-size: 60px;
+  font-size: 55px;
   font-weight: bold;
   position: relative;
-  right: 133px;
+  right: 59px;
 }
 section.about .wrap {
   margin-top: 100px;
@@ -629,6 +635,9 @@ footer .right-block h1 {
   .slider-2 .right-block #owl-example .shopping-cart {
     width: 25px;
   }
+  footer .left-block {
+    height: 515px;
+  }
   footer .left-block .info-block {
     width: 100%;
     padding: 0px 30px 0px;
@@ -649,7 +658,7 @@ footer .right-block h1 {
     font-size: 22px !important;
   }
   footer .right-block {
-    height: auto;
+    height: 515px;
   }
 }
 @media screen and (max-width: 992px) {
@@ -675,7 +684,10 @@ footer .right-block h1 {
     width: 100%;
   }
   footer .left-block {
-    height: auto;
+    height: 515px;
+  }
+  footer .right-block {
+    height: 515px;
   }
   section.about {
     margin-bottom: 50px;
