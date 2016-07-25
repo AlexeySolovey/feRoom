@@ -118,11 +118,15 @@ header{
             background-color: black;
             border: none;
             ul{
+                width:100%;
                 li{
+                    width:20%;
+                    text-align: center;
                     a{
                         color:white;
                         font-size: 37px;
-                        padding: 39px 68px;
+                        padding: 45px 0px;
+                        display: inline-block;
                     }
                 }
             }
@@ -278,8 +282,9 @@ section.slider{
     margin-top: 70px;
     .left-block{
         background-color:black;
+        height:545px;
         img{
-            width: 45%;
+            width: 360px;
             float: left;
             margin: 55px 0 0 9px;
         }
@@ -300,6 +305,7 @@ section.slider{
         }
     }
     .right-block{
+        height:545px;
         background-color:#BBBBBB;
         ul{
             width: 70%;
@@ -353,11 +359,13 @@ section.slider-2{
     .left-block{
         background-color:#1F191A;
         padding:200px 50px;
+        height:591px;
         img{
-            width:35%;
+           width: 430px;
         }
     }
     .right-block{
+         height:591px;
         padding: 67px;
         background-color:@light-grey;
         .new-products{
@@ -371,10 +379,14 @@ section.slider-2{
             .product{
                 float:left;
                 margin-right: 33px;
+                 img{
+                    width:100%;
+                }
+                 h2{
+                     font-size:180%;
+                 }
             }
-            img{
-                width:300px;
-            }
+           
         }
     }
 }
@@ -385,6 +397,7 @@ section.slider-2{
 section.news{
     margin-bottom:50px;
     .left-block{
+        height:510px;
         background-color:@light-grey;
         z-index: 1;
         .news-block{
@@ -413,12 +426,13 @@ section.news{
         }
     }
     .right-block{
+        height:510px;
         background-color:#1F191A;
         padding: 129px 0px 116px 259px;
         /*padding: 16px 0px 0px 144px;*/
 
         img{
-            width:55%;
+            width:460px;
         }
         .news-figure{
             border:5px solid white;
@@ -448,7 +462,7 @@ section.news{
 section.about{
     margin-bottom:50px;
     h1{
-            margin-top: 90px;
+    margin-top: 90px;
     font-size: 60px;
     font-weight: bold;
     position: relative;
@@ -513,6 +527,7 @@ footer{
         background-color:black;
         z-index: 1;
         padding: 65px;
+        height: 482px;
         .news-block{
             margin: 50px 30px 50px 65px;
             display:inline-block;
@@ -539,6 +554,7 @@ footer{
         }
     }
     .right-block{
+        height: 482px;
         background-color:@light-grey;
         padding: 71px 0px 58px 13%;
         font-size: 22px;
@@ -611,7 +627,97 @@ footer{
 /*****************************
 			media
 *****************************/
+@media screen and (max-width: 1500px){
+ .navigation-fluid{
+        .navbar-default {
+            ul{
+                li{
+                    a{
+                        font-size: 30px !important;
+                    }
+                    }
+                }
+            }
+        }
+}
+@media screen and (max-width: 1200px){
+    section.slider-2{   
+        .left-block{
+        height:515px !important;
+        }
+        .right-block{
+         height:515px !important;
+         padding: 30px 0px 58px 10% !important;
+        font-size: 22px;
+         }
+    }
+ footer{
+     .left-block{
+          .info-block{
+        width: 100%;
+        padding: 0px 30px 0px;
+        &:first-child{
+            float:left;
+        }
+        &:last-child{
+            float:right;
+        }
+        h1{
+            font-size: 27px !important;
+        }
+        ul{
+                
+            li{
+                margin-bottom: 10px !important;
+                a{
+                    font-size: 22px !important;
+                }
+            }
+        }
+        }  
+     }
+     .right-block{
+        height:auto;
+
+     }
+    
+    }
+}
+
 @media screen and (max-width: 992px){
+    footer{
+     .left-block{
+            height: auto;
+     }
+     }
+
+    section.about{
+        margin-bottom:50px;
+        h1{
+            position: initial;
+                font-size: 45px;
+            margin-top: 101px;
+        }
+    }
+    .news{
+        .left-block {
+            height: 400px !important;
+            }
+        .right-block{
+            display:none;
+        }
+    }
+     .navigation-fluid{
+        .navbar-default {
+            ul{
+                li{
+                    a{
+                        font-size: 20px !important;
+                    }
+                    }
+                }
+            }
+        }
 header{
     .door{
         display:none !important;
@@ -620,6 +726,33 @@ header{
 }
 
 @media screen and (max-width: 768px){
+    section.news{
+    margin-bottom:50px;
+    .left-block{
+        height: 549px !important;
+        }
+    }
+    .form-inputs{
+            display:inline-block;
+            margin-top:30px;
+            .labels{
+                float:left;
+                width:41%;
+                text-align: left;
+                }
+            }
+         .navigation-fluid{
+        .navbar-default {
+            ul{
+                li{
+                    width:100% !important;
+                    a{
+                        font-size: 30px !important;
+                    }
+                    }
+                }
+            }
+        }
 	/*
 	header, section{
 		padding-left : 25px;

@@ -117,10 +117,18 @@ header .navigation-fluid .navbar-default {
   background-color: black;
   border: none;
 }
+header .navigation-fluid .navbar-default ul {
+  width: 100%;
+}
+header .navigation-fluid .navbar-default ul li {
+  width: 20%;
+  text-align: center;
+}
 header .navigation-fluid .navbar-default ul li a {
   color: white;
   font-size: 37px;
-  padding: 39px 68px;
+  padding: 45px 0px;
+  display: inline-block;
 }
 header .navigation-fluid .nav {
   border: none !important;
@@ -267,9 +275,10 @@ section.slider {
 }
 section.slider .left-block {
   background-color: black;
+  height: 545px;
 }
 section.slider .left-block img {
-  width: 45%;
+  width: 360px;
   float: left;
   margin: 55px 0 0 9px;
 }
@@ -288,6 +297,7 @@ section.slider .left-block ul li a {
   text-decoration: none;
 }
 section.slider .right-block {
+  height: 545px;
   background-color: #BBBBBB;
 }
 section.slider .right-block ul {
@@ -336,11 +346,13 @@ section.slider-2 {
 section.slider-2 .left-block {
   background-color: #1F191A;
   padding: 200px 50px;
+  height: 591px;
 }
 section.slider-2 .left-block img {
-  width: 35%;
+  width: 430px;
 }
 section.slider-2 .right-block {
+  height: 591px;
   padding: 67px;
   background-color: #BBBBBB;
 }
@@ -354,8 +366,11 @@ section.slider-2 .right-block .new-products .product {
   float: left;
   margin-right: 33px;
 }
-section.slider-2 .right-block .new-products img {
-  width: 300px;
+section.slider-2 .right-block .new-products .product img {
+  width: 100%;
+}
+section.slider-2 .right-block .new-products .product h2 {
+  font-size: 180%;
 }
 /*****************************
 			news
@@ -364,6 +379,7 @@ section.news {
   margin-bottom: 50px;
 }
 section.news .left-block {
+  height: 510px;
   background-color: #BBBBBB;
   z-index: 1;
 }
@@ -389,12 +405,13 @@ section.news .left-block .news-block .second-news {
   text-align: right;
 }
 section.news .right-block {
+  height: 510px;
   background-color: #1F191A;
   padding: 129px 0px 116px 259px;
   /*padding: 16px 0px 0px 144px;*/
 }
 section.news .right-block img {
-  width: 55%;
+  width: 460px;
 }
 section.news .right-block .news-figure {
   border: 5px solid white;
@@ -481,6 +498,7 @@ footer .left-block {
   background-color: black;
   z-index: 1;
   padding: 65px;
+  height: 482px;
 }
 footer .left-block .news-block {
   margin: 50px 30px 50px 65px;
@@ -504,6 +522,7 @@ footer .left-block .news-block .second-news {
   text-align: right;
 }
 footer .right-block {
+  height: 482px;
   background-color: #BBBBBB;
   padding: 71px 0px 58px 13%;
   font-size: 22px;
@@ -571,12 +590,94 @@ footer .right-block h1 {
 /*****************************
 			media
 *****************************/
+@media screen and (max-width: 1500px) {
+  .navigation-fluid .navbar-default ul li a {
+    font-size: 30px !important;
+  }
+}
+@media screen and (max-width: 1200px) {
+  section.slider-2 .left-block {
+    height: 515px !important;
+  }
+  section.slider-2 .right-block {
+    height: 515px !important;
+    padding: 30px 0px 58px 10% !important;
+    font-size: 22px;
+  }
+  footer .left-block .info-block {
+    width: 100%;
+    padding: 0px 30px 0px;
+  }
+  footer .left-block .info-block:first-child {
+    float: left;
+  }
+  footer .left-block .info-block:last-child {
+    float: right;
+  }
+  footer .left-block .info-block h1 {
+    font-size: 27px !important;
+  }
+  footer .left-block .info-block ul li {
+    margin-bottom: 10px !important;
+  }
+  footer .left-block .info-block ul li a {
+    font-size: 22px !important;
+  }
+  footer .right-block {
+    height: auto;
+    font-size: 14px;
+  }
+  footer .right-block img {
+    width: 30px;
+  }
+}
 @media screen and (max-width: 992px) {
+  footer .left-block {
+    height: auto;
+  }
+  section.about {
+    margin-bottom: 50px;
+  }
+  section.about h1 {
+    position: initial;
+    font-size: 45px;
+    margin-top: 101px;
+  }
+  .news .left-block {
+    height: 400px !important;
+  }
+  .news .right-block {
+    display: none;
+  }
+  .navigation-fluid .navbar-default ul li a {
+    font-size: 20px !important;
+  }
   header .door {
     display: none !important;
   }
 }
 @media screen and (max-width: 768px) {
+  section.news {
+    margin-bottom: 50px;
+  }
+  section.news .left-block {
+    height: 549px !important;
+  }
+  .form-inputs {
+    display: inline-block;
+    margin-top: 30px;
+  }
+  .form-inputs .labels {
+    float: left;
+    width: 41%;
+    text-align: left;
+  }
+  .navigation-fluid .navbar-default ul li {
+    width: 100% !important;
+  }
+  .navigation-fluid .navbar-default ul li a {
+    font-size: 30px !important;
+  }
   /*
 	header, section{
 		padding-left : 25px;
