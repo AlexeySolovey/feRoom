@@ -26,6 +26,16 @@
 	             itemsMobile : false,
 	             pagination: false
 	        });
+
+	        $("#owl-products").owlCarousel({
+
+	            items: 3,
+	            itemsDesktop: false,
+	            itemsDesktopSmall: false,
+	            itemsTablet: false,
+	            itemsMobile: false,
+	            pagination: false
+	        });
 	});
 
 
