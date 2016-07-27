@@ -3,7 +3,7 @@
 *****************************/
 /*OPEN SANS*/
 @font-face {
-  font-family: OpenSans-Regular;
+  font-family: "OpenSans-Regular";
   src: url(../fonts/OpenSans-Regular.ttf);
 }
 /*****************************
@@ -29,6 +29,17 @@ ul {
 }
 ul li {
   list-style-type: none;
+}
+.background-fluid {
+  background: url(../images/background.png) no-repeat center;
+  background-size: cover;
+}
+.background-fluid-2 {
+  background: url(../images/background-2.png) no-repeat center;
+  background-size: cover;
+}
+* {
+  font-family: "OpenSans-Regular";
 }
 /*****************************
 			header
@@ -242,19 +253,41 @@ header .form .form-inputs .inputs button:hover {
 /* Required */
 #list-images,
 #list-images li {
-  height: 389px;
+  height: 420px;
   display: block;
 }
 #list-images {
+  background-color: white;
   float: right;
   overflow: hidden;
   /* Required to hide the inactive slides */
-  padding: 45px;
+  padding: 35px;
   margin: 66px;
   width: 100%;
 }
+#list-images h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 22px;
+  display: inline-block;
+  width: 52%;
+  position: relative;
+  left: 30px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+#list-images h2 b {
+  margin-bottom: 6px;
+  display: inline-block;
+}
 #list-images img {
   width: 70%;
+  margin-bottom: 10px;
+}
+#list-images .shopping-cart {
+  width: 28px;
+  position: relative;
+  right: 14px;
 }
 #list-images li {
   position: relative;
@@ -280,7 +313,7 @@ section.slider {
   margin-top: 70px;
 }
 section.slider .left-block {
-  background-color: black;
+  background-color: #1F191A;
   height: 545px;
 }
 section.slider .left-block img {
@@ -359,7 +392,7 @@ section.slider-2 .left-block img {
 }
 section.slider-2 .right-block {
   height: 530px;
-  padding: 67px;
+  padding: 39px 67px;
   background-color: #BBBBBB;
 }
 section.slider-2 .right-block .new-products {
@@ -375,19 +408,23 @@ section.slider-2 .right-block .new-products .product {
 }
 section.slider-2 .right-block .new-products .product img {
   width: 100%;
+  height: 246px;
 }
 section.slider-2 .right-block .new-products .product h1 {
   font-size: 180%;
   margin-bottom: 0;
   display: inline-block;
-  width: 55%;
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 section.slider-2 .right-block .new-products .product .shopping-cart {
   width: 32px;
   float: right;
   position: relative;
-  top: 16px;
+  top: -34px;
   right: 10px;
+  height: auto;
 }
 /*****************************
 			news
@@ -501,18 +538,21 @@ section.about .figure-6 img {
 *****************************/
 footer .info-block {
   display: inline-block;
-  padding: 55px 45px 90px;
+  padding: 55px 45px 30px;
   background: white;
 }
+footer .info-block h1 {
+  font-size: 32px;
+}
 footer .info-block ul {
-  font-size: 30px;
+  font-size: 26px;
 }
 footer .info-block ul li a {
   color: black;
   text-decoration: none;
 }
 footer .left-block {
-  background-color: black;
+  background-color: #1F191A;
   z-index: 1;
   padding: 65px;
   height: 482px;
@@ -539,7 +579,7 @@ footer .left-block .news-block .second-news {
   text-align: right;
 }
 footer .right-block {
-  height: 482px;
+  height: 520px;
   background-color: #BBBBBB;
   padding: 71px 0px 58px 13%;
   font-size: 22px;
@@ -662,6 +702,14 @@ footer .right-block h1 {
   }
 }
 @media screen and (max-width: 992px) {
+  .background-fluid {
+    background: transparent;
+    background-size: cover;
+  }
+  .background-fluid-2 {
+    background: transparent;
+    background-size: cover;
+  }
   section.news .left-block .news-block {
     margin: 50px 30px 50px 30px;
     position: initial;
