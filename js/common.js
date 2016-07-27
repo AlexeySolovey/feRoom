@@ -36,6 +36,8 @@
 	            itemsMobile: false,
 	            pagination: false
 	        });
+
+
 	});
 
 
