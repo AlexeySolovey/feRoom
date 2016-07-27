@@ -3,7 +3,7 @@
 *****************************/
 /*OPEN SANS*/
 @font-face {
-  font-family: OpenSans-Regular;
+  font-family: "OpenSans-Regular";
   src: url(../fonts/OpenSans-Regular.ttf);
 }
 /*****************************
@@ -37,6 +37,9 @@ ul li {
 .background-fluid-2 {
   background: url(../images/background-2.png) no-repeat center;
   background-size: cover;
+}
+* {
+  font-family: "OpenSans-Regular";
 }
 /*****************************
 			header
