@@ -30,6 +30,14 @@ ul{
 		list-style-type: none;
 	}
 }
+.background-fluid{
+    background:url(../images/background.png) no-repeat center;
+    background-size:cover;
+}
+.background-fluid-2{
+    background:url(../images/background-2.png) no-repeat center;
+    background-size:cover;
+}
 /*****************************
 			header
 *****************************/
@@ -309,7 +317,7 @@ padding-bottom: 9px;
 section.slider{
     margin-top: 70px;
     .left-block{
-        background-color:black;
+        background-color:#1F191A;
         height:545px;
         img{
             width: 360px;
@@ -554,10 +562,13 @@ section.about{
 footer{
     .info-block{
         display: inline-block;
-        padding: 55px 45px 90px;
+        padding: 55px 45px 30px;
         background: white;
+        h1{
+            font-size:32px;
+        }
         ul{
-                font-size: 30px;
+                font-size: 26px;
             li{
                 a{
                     color: black;
@@ -567,7 +578,7 @@ footer{
         }
     }
     .left-block{
-        background-color:black;
+        background-color:#1F191A;
         z-index: 1;
         padding: 65px;
         height: 482px;
@@ -597,7 +608,7 @@ footer{
         }
     }
     .right-block{
-        height: 482px;
+        height: 520px;
         background-color:@light-grey;
         padding: 71px 0px 58px 13%;
         font-size: 22px;
@@ -743,6 +754,14 @@ footer{
 }
 
 @media screen and (max-width: 992px){
+    .background-fluid{
+   background:transparent;
+    background-size:cover;
+}
+.background-fluid-2{
+    background:transparent;
+    background-size:cover;
+}
     section.news .left-block .news-block{
         margin: 50px 30px 50px 30px;
         position:initial;

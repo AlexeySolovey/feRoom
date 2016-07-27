@@ -30,6 +30,14 @@ ul {
 ul li {
   list-style-type: none;
 }
+.background-fluid {
+  background: url(../images/background.png) no-repeat center;
+  background-size: cover;
+}
+.background-fluid-2 {
+  background: url(../images/background-2.png) no-repeat center;
+  background-size: cover;
+}
 /*****************************
 			header
 *****************************/
@@ -302,7 +310,7 @@ section.slider {
   margin-top: 70px;
 }
 section.slider .left-block {
-  background-color: black;
+  background-color: #1F191A;
   height: 545px;
 }
 section.slider .left-block img {
@@ -527,18 +535,21 @@ section.about .figure-6 img {
 *****************************/
 footer .info-block {
   display: inline-block;
-  padding: 55px 45px 90px;
+  padding: 55px 45px 30px;
   background: white;
 }
+footer .info-block h1 {
+  font-size: 32px;
+}
 footer .info-block ul {
-  font-size: 30px;
+  font-size: 26px;
 }
 footer .info-block ul li a {
   color: black;
   text-decoration: none;
 }
 footer .left-block {
-  background-color: black;
+  background-color: #1F191A;
   z-index: 1;
   padding: 65px;
   height: 482px;
@@ -565,7 +576,7 @@ footer .left-block .news-block .second-news {
   text-align: right;
 }
 footer .right-block {
-  height: 482px;
+  height: 520px;
   background-color: #BBBBBB;
   padding: 71px 0px 58px 13%;
   font-size: 22px;
@@ -688,6 +699,14 @@ footer .right-block h1 {
   }
 }
 @media screen and (max-width: 992px) {
+  .background-fluid {
+    background: transparent;
+    background-size: cover;
+  }
+  .background-fluid-2 {
+    background: transparent;
+    background-size: cover;
+  }
   section.news .left-block .news-block {
     margin: 50px 30px 50px 30px;
     position: initial;
