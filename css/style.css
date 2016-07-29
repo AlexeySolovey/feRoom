@@ -100,6 +100,8 @@ header .top-fluid .top-adress {
   display: table;
   margin-left: auto;
   margin-right: auto;
+  width: 108%;
+  padding-left: 16px;
 }
 header .top-fluid .top-adress img {
   width: 45px;
@@ -666,6 +668,9 @@ footer .right-block h1 {
   }
 }
 @media screen and (max-width: 1200px) {
+  .form span {
+    display: none;
+  }
   .slider-2 .left-block {
     height: auto !important;
     padding: 108px 50px;
@@ -715,6 +720,9 @@ footer .right-block h1 {
   }
 }
 @media screen and (max-width: 992px) {
+  .top-adress {
+    width: auto !important;
+  }
   .top-adress-center {
     display: table;
     margin: 0 auto;
