@@ -44,6 +44,9 @@ ul li {
 /*****************************
 			header
 *****************************/
+.top-adress-center {
+  float: left;
+}
 .form-btn {
   display: table;
   margin: 0 auto;
@@ -712,6 +715,11 @@ footer .right-block h1 {
   }
 }
 @media screen and (max-width: 992px) {
+  .top-adress-center {
+    display: table;
+    margin: 0 auto;
+    float: none;
+  }
   .background-fluid {
     background: transparent;
     background-size: cover;
@@ -765,7 +773,7 @@ footer .right-block h1 {
     font-size: 20px !important;
   }
   header img {
-    width: 315px;
+    max-width: 70%;
   }
   header .door {
     display: none !important;
