@@ -45,6 +45,9 @@ ul{
 /*****************************
 			header
 *****************************/
+.top-adress-center{
+    float:left;
+}
 .form-btn{
         display: table;
     margin: 0 auto;
@@ -774,6 +777,11 @@ footer{
 }
 
 @media screen and (max-width: 992px){
+    .top-adress-center{
+        display:table;
+        margin:0 auto;
+        float:none;
+    }
     .background-fluid{
    background:transparent;
     background-size:cover;
@@ -841,7 +849,8 @@ footer{
         }
 header{
     img{
-         width: 315px;
+         max-width: 70%;
+
     }
     .door{
         display:none !important;
