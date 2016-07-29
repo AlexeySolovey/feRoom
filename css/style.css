@@ -44,12 +44,11 @@ ul li {
 /*****************************
 			header
 *****************************/
+.header-fluid {
+  background: center url(../images/background-top.png);
+}
 header img {
   width: 100%;
-}
-header .top-fluid {
-  background: url(../images/background-top.png) center;
-  border-bottom: 30px solid;
 }
 header .top-fluid .top-col {
   padding: 20px 30px;
@@ -115,6 +114,7 @@ header .top-fluid .top-adress .adress p {
   font-weight: bold;
 }
 header .floor {
+  border-top: 30px solid #1D1718;
   background: url(../images/floor.png);
   text-align: center;
   padding: 30px;
@@ -139,10 +139,15 @@ header .navigation-fluid .navbar-default ul li {
   text-align: center;
 }
 header .navigation-fluid .navbar-default ul li a {
+  line-height: 33px;
   color: white;
-  font-size: 37px;
+  font-size: 30px;
   padding: 45px 0px;
   display: inline-block;
+}
+header .navigation-fluid .navbar-default ul .li-3 {
+  position: relative;
+  left: 11px;
 }
 header .navigation-fluid .nav {
   border: none !important;
