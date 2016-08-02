@@ -54,6 +54,9 @@ ul li {
 .header-fluid {
   background: center url(../images/background-top_2.jpg);
 }
+.phone-numbers {
+  font-size: 16px !important;
+}
 header img {
   width: 100%;
 }
@@ -62,7 +65,7 @@ header .top-fluid .top-col {
 }
 header .top-fluid .top-col .door {
   display: table;
-  width: 220px;
+  width: 180px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -71,6 +74,7 @@ header .top-fluid .top-col .door {
 header .top-fluid .top-col .logo {
   display: table;
   margin: 100px auto;
+  width: 90%;
 }
 header .top-fluid .top-phones {
   display: table;
@@ -78,7 +82,7 @@ header .top-fluid .top-phones {
   margin-right: auto;
 }
 header .top-fluid .top-phones img {
-  width: 35px;
+  width: 28px;
   float: left;
   position: relative;
   top: 10px;
@@ -89,7 +93,7 @@ header .top-fluid .top-phones h3 {
   float: left;
 }
 header .top-fluid .top-phones .phone-numbers {
-  font-size: 20px;
+  font-size: 16px !important;
   display: inline-block;
 }
 header .top-fluid .top-phones .phone-numbers p {
@@ -104,13 +108,14 @@ header .top-fluid .top-adress {
   padding-left: 16px;
 }
 header .top-fluid .top-adress img {
-  width: 45px;
+  width: 38px;
   margin-right: 10px;
   float: left;
 }
 header .top-fluid .top-adress h3 {
   margin: 0;
   float: left;
+  font-size: 20px;
 }
 header .top-fluid .top-adress .adress {
   display: inline-block;
@@ -130,7 +135,7 @@ header .floor {
   padding: 30px;
 }
 header .floor h1 {
-  font-size: 55px;
+  font-size: 46px;
   margin-top: 0px;
 }
 header .navigation-fluid {
@@ -151,7 +156,7 @@ header .navigation-fluid .navbar-default ul li {
 header .navigation-fluid .navbar-default ul li a {
   line-height: 33px;
   color: white;
-  font-size: 30px;
+  font-size: 25px;
   padding: 45px 0px;
   display: inline-block;
 }
@@ -167,7 +172,7 @@ header .registration-icon {
   width: 50%;
 }
 header .registration-icon img {
-  width: 40px;
+  width: 28px;
   position: relative;
   bottom: 16px;
 }
@@ -182,7 +187,7 @@ header .registration-icon a {
 header .registration-icon a span {
   display: inline-block;
   width: 112px;
-  font-size: 18px;
+  font-size: 15px;
   margin-bottom: 20px;
 }
 header .registration-icon a:hover {
@@ -193,7 +198,7 @@ header .basket-icon {
   width: 50%;
 }
 header .basket-icon img {
-  width: 40px;
+  width: 28px;
   position: relative;
   bottom: 16px;
 }
@@ -206,7 +211,7 @@ header .basket-icon a {
 header .basket-icon a span {
   display: inline-block;
   width: 112px;
-  font-size: 18px;
+  font-size: 15px;
   margin-bottom: 20px;
 }
 header .basket-icon a:hover {
@@ -219,6 +224,7 @@ header .form {
 header .form h1 {
   margin-bottom: 0;
   margin-top: 5px;
+  font-size: 26px;
 }
 header .form .form-inputs {
   display: inline-block;
@@ -243,11 +249,11 @@ header .form .form-inputs .inputs {
   margin: 0 auto;
 }
 header .form .form-inputs .inputs input {
-  font-size: 20px;
+  font-size: 18px;
   padding: 0 20px;
   opacity: 0.6;
   border-radius: 10px;
-  height: 50px;
+  height: 42px;
   margin-bottom: 15px;
   width: 100%;
 }
@@ -256,7 +262,7 @@ header .form .form-inputs .inputs button {
   background-color: black;
   color: white;
   padding: 5px 41px;
-  font-size: 22px;
+  font-size: 18px;
   border-radius: 7px;
 }
 header .form .form-inputs .inputs button:hover {
@@ -278,7 +284,13 @@ header .form .form-inputs .inputs button:hover {
   /* Required to hide the inactive slides */
   padding: 35px;
   margin: 66px;
-  width: 100%;
+  width: 134%;
+  position: relative;
+  left: 169px;
+}
+#list-images a {
+  color: black;
+  text-decoration: none;
 }
 #list-images h2 {
   margin-top: 0px;
@@ -332,7 +344,7 @@ section.slider .left-block {
   height: 545px;
 }
 section.slider .left-block img {
-  width: 360px;
+  width: 300px;
   float: left;
   margin: 55px 0 0 9px;
 }
@@ -344,7 +356,7 @@ section.slider .left-block ul {
   margin-bottom: 65px;
 }
 section.slider .left-block ul li {
-  font-size: 26px;
+  font-size: 22px;
 }
 section.slider .left-block ul li a {
   color: #BBBBBB;
@@ -403,7 +415,7 @@ section.slider-2 .left-block {
   height: 530px;
 }
 section.slider-2 .left-block img {
-  width: 430px;
+  width: 360px;
 }
 section.slider-2 .right-block {
   height: 530px;
@@ -414,7 +426,9 @@ section.slider-2 .right-block .new-products {
   background-color: white;
   display: inline-block;
   padding: 40px 51px 40px 51px;
-  width: 100%;
+  width: 230%;
+  position: relative;
+  right: 155px;
 }
 section.slider-2 .right-block .new-products .product {
   float: left;
@@ -460,7 +474,7 @@ section.news .left-block .news-block {
   padding: 50px 50px 30px;
 }
 section.news .left-block .news-block span {
-  font-size: 28px;
+  font-size: 20px;
 }
 section.news .left-block .news-block h1 {
   margin-top: 0;
@@ -469,9 +483,15 @@ section.news .left-block .news-block .first-news {
   width: 58%;
   text-align: left;
 }
+section.news .left-block .news-block .first-news h1 {
+  font-size: 28px;
+}
 section.news .left-block .news-block .second-news {
   width: 58%;
   text-align: right;
+}
+section.news .left-block .news-block .second-news h1 {
+  font-size: 28px;
 }
 section.news .right-block {
   height: 510px;
@@ -480,7 +500,7 @@ section.news .right-block {
   /*padding: 16px 0px 0px 144px;*/
 }
 section.news .right-block img {
-  width: 460px;
+  width: 370px;
 }
 section.news .right-block .news-figure {
   border: 5px solid white;
@@ -509,7 +529,7 @@ section.about {
 }
 section.about h1 {
   margin-top: 90px;
-  font-size: 55px;
+  font-size: 45px;
   font-weight: bold;
   position: relative;
   right: 59px;
@@ -541,12 +561,15 @@ section.about figure {
   font-size: 28px;
   text-align: center;
 }
+section.about figure figcaption {
+  font-size: 24px;
+}
 section.about figure img {
-  width: 100px;
+  width: 85px;
 }
 section.about .figure-6 img {
-  width: 170px;
-  margin-bottom: 4px;
+  width: 130px;
+  margin-bottom: 13px;
 }
 /*****************************
 			footer
@@ -555,12 +578,15 @@ footer .info-block {
   display: inline-block;
   padding: 55px 45px 30px;
   background: white;
+  width: 130%;
+  position: relative;
+  right: 30px;
 }
 footer .info-block h1 {
-  font-size: 32px;
+  font-size: 25px;
 }
 footer .info-block ul {
-  font-size: 26px;
+  font-size: 20px;
 }
 footer .info-block ul li a {
   color: black;
@@ -570,19 +596,19 @@ footer .left-block {
   background-color: #1F191A;
   z-index: 1;
   padding: 65px;
-  height: 482px;
 }
 footer .left-block .news-block {
   margin: 50px 30px 50px 65px;
   display: inline-block;
   width: 110%;
   background-color: white;
-  padding: 50px 50px 30px;
+  padding: 95px 50px 82px;
 }
 footer .left-block .news-block span {
   font-size: 28px;
 }
 footer .left-block .news-block h1 {
+  font-size: 28px !important;
   margin-top: 0;
 }
 footer .left-block .news-block .first-news {
@@ -594,7 +620,6 @@ footer .left-block .news-block .second-news {
   text-align: right;
 }
 footer .right-block {
-  height: 520px;
   background-color: #BBBBBB;
   padding: 71px 0px 58px 13%;
   font-size: 22px;
@@ -610,35 +635,39 @@ footer .right-block li:last-child {
   margin-top: 38px;
 }
 footer .right-block li img {
-  width: 55px;
+  width: 40px;
   margin-right: 25px;
 }
 footer .right-block li i {
   float: left;
-  font-size: 55px;
+  font-size: 45px;
   margin-right: 33px;
 }
 footer .right-block li .fa-envelope-o {
-  font-size: 50px;
+  font-size: 35px;
   position: relative;
-  bottom: 20px;
+  bottom: 10px;
 }
 footer .right-block li .fa-phone {
   top: 10px;
   position: relative;
+  font-size: 35px;
 }
 footer .right-block li .fa-clock-o {
   position: relative;
-  bottom: 21px;
+  bottom: 11px;
+  font-size: 35px;
 }
 footer .right-block li .adress {
   top: 15px;
   display: inline-block;
   position: relative;
+  font-size: 18px;
 }
 footer .right-block li span {
   position: relative;
   bottom: 10px;
+  font-size: 18px;
 }
 footer .right-block .news-figure {
   border: 5px solid white;
@@ -663,11 +692,20 @@ footer .right-block h1 {
 			media
 *****************************/
 @media screen and (max-width: 1500px) {
+  .slider-2 .right-block #owl-example {
+    width: 190% !important;
+    position: relative;
+    right: 250px;
+  }
   .navigation-fluid .navbar-default ul li a {
     font-size: 30px !important;
   }
 }
 @media screen and (max-width: 1200px) {
+  #list-images {
+    width: 72%;
+    position: initial;
+  }
   .form span {
     display: none;
   }
@@ -681,8 +719,9 @@ footer .right-block h1 {
     font-size: 22px;
   }
   .slider-2 .right-block #owl-example {
+    width: 185% !important;
     position: relative;
-    right: 28px;
+    right: 185px;
   }
   .slider-2 .right-block #owl-example h1 {
     font-size: 20px;
@@ -698,7 +737,9 @@ footer .right-block h1 {
   }
   footer .left-block .info-block {
     width: 100%;
-    padding: 0px 30px 0px;
+    padding: 22px 30px 35px;
+    position: relative;
+    left: 2px;
   }
   footer .left-block .info-block:first-child {
     float: left;
@@ -720,6 +761,14 @@ footer .right-block h1 {
   }
 }
 @media screen and (max-width: 992px) {
+  .slider-2 .right-block #owl-example {
+    width: 90% !important;
+    position: initial;
+  }
+  #list-images {
+    width: 100%;
+    position: initial;
+  }
   .top-adress {
     width: auto !important;
   }
