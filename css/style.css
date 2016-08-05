@@ -249,11 +249,11 @@ header .form .form-inputs .inputs {
   margin: 0 auto;
 }
 header .form .form-inputs .inputs input {
-  font-size: 20px;
+  font-size: 18px;
   padding: 0 20px;
   opacity: 0.6;
   border-radius: 10px;
-  height: 50px;
+  height: 42px;
   margin-bottom: 15px;
   width: 100%;
 }
@@ -490,6 +490,9 @@ section.news .left-block .news-block .second-news {
   width: 58%;
   text-align: right;
 }
+section.news .left-block .news-block .second-news h1 {
+  font-size: 28px;
+}
 section.news .right-block {
   height: 510px;
   background-color: #1F191A;
@@ -575,6 +578,9 @@ footer .info-block {
   display: inline-block;
   padding: 55px 45px 30px;
   background: white;
+  width: 130%;
+  position: relative;
+  right: 30px;
 }
 footer .info-block h1 {
   font-size: 25px;
@@ -602,6 +608,7 @@ footer .left-block .news-block span {
   font-size: 28px;
 }
 footer .left-block .news-block h1 {
+  font-size: 28px !important;
   margin-top: 0;
 }
 footer .left-block .news-block .first-news {
@@ -682,14 +689,116 @@ footer .right-block h1 {
   font-weight: bold;
 }
 /*****************************
+		    catalog
+*****************************/
+.second-header {
+  padding: 20px;
+}
+.second-header img {
+  width: 40px;
+  float: left;
+}
+.second-header .logo {
+  width: 90%;
+}
+.second-header .top-adress-center {
+  display: inline-block;
+}
+.second-header .top-adress-center img {
+  width: 48px;
+  position: relative;
+  top: 10px;
+  margin-right: 12px;
+}
+.second-header .adress p {
+  margin-bottom: 0;
+  font-size: 20px;
+}
+.second-header .phones {
+  position: relative;
+  top: -1px;
+  width: 120%;
+  right: 39px;
+}
+.second-header .phones img {
+  position: relative;
+  top: 10px;
+  margin-right: 12px;
+}
+.second-header .phones p {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+.second-header .login-div {
+  position: relative;
+  top: 8px;
+  right: 10px;
+}
+.second-header .login-div a {
+  display: inline-block;
+  margin-right: 30px;
+}
+/*****************************
 			media
 *****************************/
 @media screen and (max-width: 1500px) {
+  .slider-2 .right-block #owl-example {
+    width: 190% !important;
+    position: relative;
+    right: 250px;
+  }
   .navigation-fluid .navbar-default ul li a {
     font-size: 30px !important;
   }
 }
 @media screen and (max-width: 1200px) {
+  .second-header {
+    padding: 20px;
+  }
+  .second-header img {
+    width: 40px;
+    float: left;
+  }
+  .second-header .logo {
+    width: 90%;
+  }
+  .second-header .top-adress-center {
+    display: inline-block;
+  }
+  .second-header .top-adress-center img {
+    width: 48px;
+    position: relative;
+    top: 10px;
+    margin-right: 12px;
+  }
+  .second-header .adress p {
+    margin-bottom: 0;
+    font-size: 20px;
+  }
+  .second-header .phones {
+    position: relative;
+    top: -1px;
+    width: 120%;
+    right: 39px;
+  }
+  .second-header .phones img {
+    position: relative;
+    top: 10px;
+    margin-right: 12px;
+  }
+  .second-header .phones p {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+  .second-header .login-div {
+    position: relative;
+    top: 8px;
+    right: 10px;
+  }
+  .second-header .login-div a {
+    display: inline-block;
+    margin-right: 30px;
+  }
   #list-images {
     width: 72%;
     position: initial;
@@ -707,9 +816,9 @@ footer .right-block h1 {
     font-size: 22px;
   }
   .slider-2 .right-block #owl-example {
-    width: 190% !important;
+    width: 185% !important;
     position: relative;
-    right: 155px;
+    right: 185px;
   }
   .slider-2 .right-block #owl-example h1 {
     font-size: 20px;
@@ -725,7 +834,9 @@ footer .right-block h1 {
   }
   footer .left-block .info-block {
     width: 100%;
-    padding: 0px 30px 0px;
+    padding: 22px 30px 35px;
+    position: relative;
+    left: 2px;
   }
   footer .left-block .info-block:first-child {
     float: left;
@@ -747,6 +858,53 @@ footer .right-block h1 {
   }
 }
 @media screen and (max-width: 992px) {
+  .second-header {
+    padding: 20px;
+  }
+  .second-header img {
+    width: 40px;
+    float: left;
+  }
+  .second-header .logo {
+    width: 50%;
+  }
+  .second-header .top-adress-center {
+    display: inline-block;
+  }
+  .second-header .top-adress-center img {
+    width: 48px;
+    position: relative;
+    top: 10px;
+    margin-right: 12px;
+  }
+  .second-header .adress p {
+    margin-bottom: 0;
+    font-size: 20px;
+  }
+  .second-header .phones {
+    position: relative;
+    top: -1px;
+    width: 120%;
+    right: 39px;
+  }
+  .second-header .phones img {
+    position: relative;
+    top: 10px;
+    margin-right: 12px;
+  }
+  .second-header .phones p {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+  .second-header .login-div {
+    position: relative;
+    top: 8px;
+    right: 10px;
+  }
+  .second-header .login-div a {
+    display: inline-block;
+    margin-right: 30px;
+  }
   .slider-2 .right-block #owl-example {
     width: 90% !important;
     position: initial;

@@ -24,7 +24,8 @@
 	             itemsDesktopSmall : false,
 	             itemsTablet: false,
 	             itemsMobile : false,
-	             pagination: false
+	             pagination: false,
+	             autoPlay: true
 	        });
 
 	        $("#owl-products").owlCarousel({
@@ -34,7 +35,8 @@
 	            itemsDesktopSmall: false,
 	            itemsTablet: false,
 	            itemsMobile: false,
-	            pagination: false
+	            pagination: false,
+	            autoPlay: true
 	        });
 
 
