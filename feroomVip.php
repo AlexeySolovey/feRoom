@@ -23,18 +23,19 @@
 </head>
 <body>
    <?php include_once "headerSecond.php";?>
-       <section class="catalog">
+
+    <section class="catalog">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <div id="accordion" class="right-menu">
+                    <div class="right-menu">
                         <img src="images/catalog.png" />
                         <ul>
                             <li>
-                                <a href="#collapse-11" data-parent="#accordion" data-toggle="collapse">
+                                <a href="entranceDoor.php">
                                     Входные двери
                                 </a>
-                                <ul id="collapse-11" class="collapse">
+                                <ul>
                                     <li>
                                         <a href="feroomVip.php">
                                             Feroom VIP
@@ -48,21 +49,9 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#collapse-12" data-parent="#accordion" data-toggle="collapse">
+                                <a href="#">
                                     Межкомнатные двери
                                 </a>
-                                <ul id="collapse-12" class="collapse">
-                                    <li>
-                                        <a href="feroomVip.php">
-                                            тест
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            тест 2
-                                        </a>
-                                    </li>
-                                </ul>
                             </li>
                             <li>
                                 <a href="#">
@@ -86,7 +75,6 @@
                             </li>
                         </ul>
                     </div>
-                   
                 </div>
                 <div class="col-md-8">
                     <div class="catalog-items">
@@ -94,102 +82,160 @@
                             <ol class="breadcrumb">
                                 <li><a href="index.php">Главная</a></li>
                                 <li><a href="catalog.php">Каталог</a></li>
+                                <li><a href="entranceDoor.php">Входные двери</a></li>
+                                <li><a href="feroomVip.php">Feroom VIP</a></li>
                             </ol>
                         </div>
-                        
+
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="item">
                                     <img src="images/door.png" />
-                                    <div class="item-border"></div>
-                                    <div class="item-tittle">
-                                        <a href="entranceDoor.php">
+                                    <div class="vip-item-tittle">
+                                        <a href="">
                                             <h3>
-                                                Входные двери
+                                                Feroom VIP
                                             </h3>
+                                            <span>Цена</span>
+                                            <img src="images/top_2.png" />
                                         </a>
-                                       
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="item">
                                     <img src="images/door.png" />
-                                    <div class="item-border"></div>
-                                    <div class="item-tittle">
-                                        <a href="#">
+                                    <div class="vip-item-tittle">
+                                        <a href="">
                                             <h3>
-                                                Межкомнатные двери
+                                                Feroom VIP
                                             </h3>
+                                            <span>Цена</span>
+                                            <img src="images/top_2.png" />
                                         </a>
-                                       
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="item">
                                     <img src="images/door.png" />
-                                    <div class="item-border"></div>
-                                    <div class="item-tittle">
-                                        <a href="#">
+                                    <div class="vip-item-tittle">
+                                        <a href="">
                                             <h3>
-                                                Фурнитура
+                                                Feroom VIP
                                             </h3>
+                                            <span>Цена</span>
+                                            <img src="images/top_2.png" />
                                         </a>
-                                        
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="item">
                                     <img src="images/door.png" />
-                                    <div class="item-border"></div>
-                                    <div class="item-tittle">
-                                        <a href="#">
+                                    <div class="vip-item-tittle">
+                                        <a href="">
                                             <h3>
-                                                Напольное покрытие
+                                                Feroom VIP
                                             </h3>
+                                            <span>Цена</span>
+                                            <img src="images/top_2.png" />
                                         </a>
-                                      
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="item">
                                     <img src="images/door.png" />
-                                    <div class="item-border"></div>
-                                    <div class="item-tittle">
-                                        <a href="#">
+                                    <div class="vip-item-tittle">
+                                        <a href="">
                                             <h3>
-                                                Новинки
+                                                Feroom VIP
                                             </h3>
+                                            <span>Цена</span>
+                                            <img src="images/top_2.png" />
                                         </a>
-                                        
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="item">
                                     <img src="images/door.png" />
-                                    <div class="item-border"></div>
-                                    <div class="item-tittle">
-                                        <a href="#">
+                                    <div class="vip-item-tittle">
+                                        <a href="">
                                             <h3>
-                                                Популярное
+                                                Feroom VIP
                                             </h3>
+                                            <span>Цена</span>
+                                            <img src="images/top_2.png" />
                                         </a>
-                                      
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-md-4">
+                                <div class="item">
+                                    <img src="images/door.png" />
+                                    <div class="vip-item-tittle">
+                                        <a href="">
+                                            <h3>
+                                                Feroom VIP
+                                            </h3>
+                                            <span>Цена</span>
+                                            <img src="images/top_2.png" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="item">
+                                    <img src="images/door.png" />
+                                    <div class="vip-item-tittle">
+                                        <a href="">
+                                            <h3>
+                                                Feroom VIP
+                                            </h3>
+                                            <span>Цена</span>
+                                            <img src="images/top_2.png" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="item">
+                                    <img src="images/door.png" />
+                                    <div class="vip-item-tittle">
+                                        <a href="">
+                                            <h3>
+                                                Feroom VIP
+                                            </h3>
+                                            <span>Цена</span>
+                                            <img src="images/top_2.png" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                                    <nav>
+  <ul class="pagination">
+    <li><a href="#"><span aria-hidden="true">&laquo;</span><span class="sr-only">Попередня</span></a></li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#"><span aria-hidden="true">&raquo;</span><span class="sr-only">Наступна</span></a></li>
+  </ul>
+</nav>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+
     </section>
 
 
-   <?php include_once "footer.php";?>
+   
+<?php include_once "footer.php";?>
 </body>
 </html>

@@ -94,7 +94,7 @@ header .top-fluid .top-phones h3 {
 }
 header .top-fluid .top-phones .phone-numbers {
   font-size: 16px !important;
-  display: inline-block;
+  display: table;
 }
 header .top-fluid .top-phones .phone-numbers p {
   margin-bottom: 0;
@@ -689,7 +689,7 @@ footer .right-block h1 {
   font-weight: bold;
 }
 /*****************************
-		    catalog
+		 second-header
 *****************************/
 .second-header {
   padding: 20px;
@@ -717,8 +717,9 @@ footer .right-block h1 {
 .second-header .phones {
   position: relative;
   top: -1px;
-  width: 120%;
+  width: 60%;
   right: 39px;
+  display: inline-block;
 }
 .second-header .phones img {
   position: relative;
@@ -730,13 +731,130 @@ footer .right-block h1 {
   margin-bottom: 0;
 }
 .second-header .login-div {
-  position: relative;
-  top: 8px;
-  right: 10px;
+  /*position: relative;
+        top: 8px;
+        right: 10px;*/
+  float: right;
+  padding-top: 8px;
 }
 .second-header .login-div a {
   display: inline-block;
   margin-right: 30px;
+}
+/*****************************
+			catalog
+*****************************/
+section.catalog {
+  background: grey;
+}
+section.catalog .col-md-4 {
+  padding-right: 0;
+}
+section.catalog .col-md-8 {
+  padding-left: 0;
+}
+section.catalog .right-menu {
+  background-color: #221F1F;
+  padding: 110px 35px;
+}
+section.catalog .right-menu ul {
+  margin-left: 50px;
+  margin-top: 20px;
+}
+section.catalog .right-menu ul li {
+  margin-bottom: 10px;
+}
+section.catalog .right-menu ul li a {
+  color: #B9B9B9;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+}
+section.catalog .right-menu ul li ul {
+  margin-top: 10px;
+}
+section.catalog .right-menu ul li a:hover {
+  color: white;
+}
+section.catalog .catalog-items {
+  background-color: #B9B9B9;
+  padding: 50px 40px;
+  padding: 50px 30px 50px 20px;
+}
+section.catalog .catalog-items .pagination {
+  display: table;
+  margin: 20px auto;
+}
+section.catalog .catalog-items .pagination li a {
+  color: black;
+  background-color: #BBBBBB;
+  border: none;
+}
+section.catalog .catalog-items .pagination li a:hover {
+  color: white;
+}
+section.catalog .catalog-items .row {
+  margin: 35px 0;
+}
+section.catalog .catalog-items .catalog-a {
+  margin-left: 28px;
+}
+section.catalog .catalog-items .catalog-a .breadcrumb {
+  background: transparent;
+}
+section.catalog .catalog-items .catalog-a .breadcrumb > li + li:before {
+  color: white;
+  font-size: 16px;
+}
+section.catalog .catalog-items a {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+}
+section.catalog .catalog-items .item {
+  background-color: white;
+  margin: 0px 5px 65px;
+}
+section.catalog .catalog-items .item .item-border {
+  height: 15px;
+  background: linear-gradient(to top, #A6A6A6, #777777);
+}
+section.catalog .catalog-items .item .vip-item-tittle {
+  padding: 5px 22px 0px;
+}
+section.catalog .catalog-items .item .vip-item-tittle a {
+  color: black;
+  display: inline-block;
+}
+section.catalog .catalog-items .item .vip-item-tittle a h3 {
+  font-weight: bold;
+  margin: 0;
+}
+section.catalog .catalog-items .item .vip-item-tittle a img {
+  width: 50px !important;
+  float: right;
+  display: inline-block;
+  position: relative;
+  bottom: 12px;
+  right: -49px;
+}
+section.catalog .catalog-items .item .item-tittle {
+  background-color: #221F1F;
+  color: white;
+  padding: 15px 5px 18px;
+  white-space: nowrap;
+}
+section.catalog .catalog-items .item .item-tittle h3 {
+  display: table;
+  margin: 0 auto;
+  font-size: 18px;
+}
+section.catalog .catalog-items .item img {
+  width: 60%;
+  padding: 10px;
+  display: table;
+  margin: 0 auto;
 }
 /*****************************
 			media
@@ -752,6 +870,23 @@ footer .right-block h1 {
   }
 }
 @media screen and (max-width: 1200px) {
+  .vip-item-tittle {
+    padding: 5px 22px 0px;
+  }
+  .vip-item-tittle a {
+    display: table !important;
+    margin: auto !important;
+  }
+  .vip-item-tittle a img {
+    right: -13px !important;
+  }
+  .second-header img {
+    width: 30px;
+    margin-bottom: 10px;
+  }
+  .second-header .logo {
+    width: 100% !important;
+  }
   .second-header {
     padding: 20px;
   }
@@ -761,9 +896,6 @@ footer .right-block h1 {
   }
   .second-header .logo {
     width: 90%;
-  }
-  .second-header .top-adress-center {
-    display: inline-block;
   }
   .second-header .top-adress-center img {
     width: 48px;
@@ -775,29 +907,8 @@ footer .right-block h1 {
     margin-bottom: 0;
     font-size: 20px;
   }
-  .second-header .phones {
-    position: relative;
-    top: -1px;
-    width: 120%;
-    right: 39px;
-  }
-  .second-header .phones img {
-    position: relative;
-    top: 10px;
-    margin-right: 12px;
-  }
-  .second-header .phones p {
-    font-size: 20px;
-    margin-bottom: 0;
-  }
   .second-header .login-div {
-    position: relative;
-    top: 8px;
-    right: 10px;
-  }
-  .second-header .login-div a {
-    display: inline-block;
-    margin-right: 30px;
+    float: none;
   }
   #list-images {
     width: 72%;
@@ -858,52 +969,54 @@ footer .right-block h1 {
   }
 }
 @media screen and (max-width: 992px) {
+  .catalog-items .item img {
+    width: 255px !important;
+  }
+  .catalog-items .item .item-tittle h3 {
+    font-size: 25px !important;
+  }
   .second-header {
     padding: 20px;
   }
+  .second-header .top-adress {
+    display: table;
+    margin: 0 auto;
+  }
   .second-header img {
-    width: 40px;
-    float: left;
+    width: 30px;
   }
   .second-header .logo {
-    width: 50%;
+    width: 250px !important;
+    display: table;
+    margin: auto;
+    float: none !important;
   }
   .second-header .top-adress-center {
-    display: inline-block;
+    display: table;
+    margin: 0 auto;
   }
-  .second-header .top-adress-center img {
-    width: 48px;
-    position: relative;
-    top: 10px;
-    margin-right: 12px;
+  .second-header .adress {
+    display: table;
+    margin: 0 auto 15px;
   }
   .second-header .adress p {
     margin-bottom: 0;
     font-size: 20px;
   }
   .second-header .phones {
-    position: relative;
-    top: -1px;
-    width: 120%;
-    right: 39px;
-  }
-  .second-header .phones img {
-    position: relative;
-    top: 10px;
-    margin-right: 12px;
-  }
-  .second-header .phones p {
-    font-size: 20px;
-    margin-bottom: 0;
+    display: table;
+    margin: auto;
+    width: 178px;
   }
   .second-header .login-div {
-    position: relative;
-    top: 8px;
-    right: 10px;
+    display: table;
+    margin: auto;
   }
   .second-header .login-div a {
-    display: inline-block;
-    margin-right: 30px;
+    margin-top: 20px;
+  }
+  .second-header .login-div a img {
+    width: 50px;
   }
   .slider-2 .right-block #owl-example {
     width: 90% !important;
